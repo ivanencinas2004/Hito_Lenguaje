@@ -1,0 +1,172 @@
+
+html {
+  height: 100%; /* Hago que mi página ocupe toda la pantalla */
+}
+  .header{
+    text-align: center;
+    background-color: rgb(222, 236, 236);
+    margin: 0%;
+    padding:0%;
+  
+  }
+  /* utilizamos display:flex para que todo el body se convierte en un contenedor flexible 
+  y por tanto los elementos hijos que estan dentro se pueden alinear y distribuir de manera flexible dentro de la línea
+  horizontal o verticalmente.*/
+  body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+  }
+
+   /* configuro la barra de navegación con la clase nav-scroller dandole las propiedades de más abajo.
+   He utilizado una plantilla de ejemplo de bootstrap por que me ha parecido interesante el concepto de superposición de capas
+   de z-index. Bootstrap incluye varios componentes que funcionan como una superposición y entre estos componentes estan las barras de navegación
+   pudiendo crear así efectos visuales interesantes y sofisticados. En este caso por ejemplo muestra el elemento HOME sin subrayar
+   y cuando pasas el raton por encima superpone el subrayado como si fuese un Link (enlace)  */
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+  
+  h1{
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  
+  table {
+    width: 100%;
+    
+  }
+  td img {
+    width: 100%;
+    height: auto;
+
+  }
+  /*@media permite consultar el tipo de pantalla que esta accediendo al contenido html y configurar dicho contenido para que se vea bien 'responsive' 
+  Todo lo que va entre {} es lo que cambia. Por ejemplo si la pantalla  es mayor o igual a 350px y menor o igual a 414px 'dispositivos móviles '
+  adapta todos los elemtos  a las propiedades indicadas.Por ejemplo el tamaño de fuente se establece en 14px para todo el elemento body.*/
+  @media only screen and (max-width: 414px) and (min-width:350px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header {
+      text-align: center;
+      padding: 0%;
+      margin: 0%;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 0%;
+    }
+  
+    td img {
+      width: 70%;
+    }
+    table {
+      width: 70%;
+    }
+  }
+  @media only screen and (max-width: 600px) and (min-width:540px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header {
+      text-align: center;
+      padding: 0%;
+      margin: 0%;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 0%;
+    }
+  
+    td img {
+      width: 70%;
+    }
+    table {
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) and (min-width:720px)  {
+    /*  CSS específicos para pantallas de tamaño máximo de 768px */
+    body {
+      font-size: 14px;
+    }
+  
+    header {
+      text-align: center;
+      padding: 0%;
+      margin: 0%;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 0%;
+    }
+    td img {
+      width: 70%;
+     
+    }
+    table {
+      width: 70%;
+    }
+  }
+  @media only screen and (max-width: 992px) and (min-width:960px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header {
+      text-align: center;
+      padding: 0%;
+      margin: 0%;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 0%;
+    }
+  
+    td img {
+      width: 70%;
+     
+    }
+    table {
+      width: 70%;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 1200px) and (min-width:1140px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header {
+      text-align: center;
+      padding: 0%;
+      margin: 0%;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 0 10px;
+    }
+    td img {
+      width: 70%;
+    }
+    table {
+      width: 70%;
+    }
+  
+  
+  }

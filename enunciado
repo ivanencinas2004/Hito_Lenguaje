@@ -1,0 +1,10 @@
+Fase 1.
+Desarrollad un trabajo de investigación sobre XML y JSON que al menos incluya: Historia, normas de
+uso y sintaxis, aplicaciones en el ámbito empresarial.
+
+Fase 2.
+Cread un proyecto web basado en un blog de programación que incluya un menú de navegación (home
++ XML + JSON + Contacto), una columna en la parte izquierda o derecha de la página (categorías +
+ultimos post + síguenos en redes sociales), y dos artículos, uno de XML y otro de JSON con toda la
+información obtenida en la fase 1. El proyecto debe ser responsive, para adaptarlo deberéis utilizar
+media query y el grid system de Bootstrap.

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- metaetiqueta viewport sirve para configurar comportamientos responsive adecuados.-->
+    
+    <!-- Bootstrap CSS --> 
+    <!--El link de bootstrap sirve para cargar su CSS, copia y pega el <link> a la hoja de estilo en tu <head>, justo antes que todas las demás hojas de estilo.-->
+    <!--El css de bootstrap que he implementado hace que la estructura de la pagina se quede centrada-->
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+    <title>Articulo de XML</title>
+    <link href="style.css" rel="stylesheet"><!-- con este link hago que este archivo de html este vinculado con el
+    archivo style.css en donde hice que la pagina fuera responsive-->
+  </head>
+  
+  <body>
+
+    <div class="container"> <!-- class container o contenedor es el elemnto más basico de bootstrap son el sistema basico de cuadricula 
+    en este caso utilizamos uno de ancho fijo que cambia el ancho max en cada punto de interrupción para que sea sensible a un diseño responsive cuando 
+    añada los @media  creo el div class dentro de la etiqueta body y no en la misma -->
+    <header class="header">
+      <h1 class="display-4 font-italic">Articulo de XML</h1>
+    </header>
+    
+    <!--voy a crear una barra de navegación tal y como indican en la documentación de  getbootstrap
+    primero creo la barra y posteriormente manejo el comportamiento de los elementos que va a contener
+    dicha barra con flex, por ejemplo cambiando el alineamento de los items . -->
+    <div class="nav-scroller py-1 mb-2"> 
+      <!--Para la etiqueta nav le he puesto la clase d-flex para alinear los elementos en linea
+      y tambien tiene el justify-content-between que hace que se ajusten los elementos al ancho definido y que el
+      espacio este  equilibrado entre ellos -->    
+      <nav class="nav d-flex justify-content-between">
+        <!--Para el texto del nav he utilizado la clase p-2 para agregar un padding de 2 
+        que aumenta un poco el espacio interno y también le he puesto el text-muted 
+       para cambiar el color del texto  a un tono más claro-->
+        <a class="p-2 text-muted" href="index.html">HOME</a>
+        <a class="p-2 text-muted" href="xml.html">XML</a>
+        <a class="p-2 text-muted" href="json.html">JSON</a>
+        <a class="p-2 text-muted" href="contactos.html">CONTACTO</a>
+      </nav> 
+    </div>
+    <div class="texto">
+      <h2> XML Historia </h2>
+      <p> La historia de XML comienza en 1996 cuando el World Wide Web Consortium (W3C) lanzó un proyecto para crear un lenguaje de marcado extensible. La idea era tener un lenguaje que permitiera describir los datos en una forma estructurada y que fuera fácilmente interpretable por máquinas y humanos.
+
+        En 1998, el W3C publicó la primera versión de la especificación de XML 1.0, que se convirtió rápidamente en un estándar de la industria para la representación y transferencia de datos en la Web. Desde entonces, se han lanzado varias versiones y extensiones de XML, incluyendo XML Schema, XSLT y XPath, que han ampliado la funcionalidad de XML y lo han convertido en una herramienta indispensable para la integración de aplicaciones y la gestión de datos en la Web.
+        
+        Hoy en día, XML es uno de los lenguajes de marcado más utilizados en la industria, y se utiliza en una amplia variedad de aplicaciones, incluyendo la gestión de contenidos, el intercambio de datos entre aplicaciones, la representación de datos en la Web y la integración de aplicaciones. Su popularidad se debe a su flexibilidad, escalabilidad y capacidad para describir los datos en una forma estructurada y fácilmente interpretable.
+      </p>        
+    
+  
+      <h2>
+        <strong>Normas De Uso y Sintaxis De XML</strong>
+      </h2>
+      <p> Las reglas que debemos seguir para crea la sintaxis de XML son: </p>
+     
+       <!--Lo que he hecho aqui es crear una lista  anidada donde enumero la norma y anido un ejemplo para practicar 
+        las listas un poco más complejas -->
+        <ul>
+          <li><u><b>Todos los elementos XML deben tener una etiqueta de cierre.</u></b>
+            <ul>
+              <li>Por ejemplo -- < nombre >John < /nombre >  </li>
+            </ul>
+          </li>
+          <li><u><b>Las etiquetas XML son sensibles a mayusculas y minusculas.</u></b>
+            <ul>
+              <li> < nombre > John < /Nombre > .. (Esto es incorrecto porque las etiquetas de apertura y cierre no coinciden en mayúsculas y minúsculas) </li>
+            </ul>    
+          <li><u><b>Todos los elementos XML deben estar debidamente anidados:</u></b>
+            <ul>
+              <li>< persona > < nombre>John < /nombre > < edad >30< /edad > < /persona > (El elemento raíz aquí es "persona") </li>
+            </ul>
+          </li>
+          <li><u><b>Los valores de atributo siempre deben estar entre comillas:</u></b>
+            <ul>
+              <li>< persona edad = "30" > < nombre > John < /nombre > 
+            </ul>
+          </li>
+        </ul>  
+        
+      <h2>
+      Ejemplos
+     </h2>
+      
+    
+       
+     <h3>Todos los elementos XML deben tener una etiqueta de cierre</h3>
+      <!--Aqui organice las imagenes dentro de las celdas de una tabla dandoles un tamaño similar para  que quedase visualmente más limpio-->
+      
+      <table >
+        <th> <mark>Forma incorrecta:</mark></th>
+        
+        <tr>
+          <td><img src="img/Captura1.JPG" style="height:130px; width:322px" /></td>
+          
+        </tr>
+        <th> <mark>Forma correcta:</mark></th> 
+        <tr>
+          <td><img src="img/Captura2.JPG" style="height:130px; width:322px" /></td>
+
+        </tr>
+      </table>
+      
+      
+      <h3> Las etiquetas XML son sensibles a mayusculas y minusculas </h3>
+      <p> Cuando creamos documentos XML , la etiqueta < Body > con la b en mayuscula es diferente de la etiqueta < body> en minuscula. </p>
+      
+      <table>
+        <th> <mark>Forma incorrecta:</mark></th>
+        
+        <tr>
+          <td><img src="img/Captura3.JPG" style="height:47px; width:252px" /></td> 
+          
+        </tr>
+        <th> <mark>Forma correcta:</mark></th>  
+        <tr>
+          <td><img src="img/Captura4.JPG" style="height:47px; width:252px" /></td>
+        </tr>
+      </table>
+
+      <h3> Todos los elementos XML deben estar debidamente anidados </h3>
+      <p> Un anidamiento incorrecto de las etiquetas no tiene sentido para XML. </p>
+      
+      <table>
+        <th> <mark>Forma incorrecta:</mark></th>
+          
+        <tr>
+          <td><img src="img/Captura5.JPG" style="height:39px; width:306px" /></td>
+          
+        </tr>
+        <th> <mark>Forma correcta:</mark></th>
+        <tr>
+          <td><img src="img/Captura6.JPG" style="height:39px; width:306px" /></td>
+        </tr>
+      </table>
+      
+    
+      
+      <h3> Todos los documentos XML deben tener un elemento raíz </h3>
+      <p> Todos los documentos XML deben contener un par de etiquetas individuales para definir un elemento raíz. <br> Todos los demás elementos deben estar dentro de este elemento raíz,todos los elementos pueden tener subelementos (elementos hijo). <br> Los subelementos deben estar anidados correctamente dentro de su elemento padre. </p>
+      <table>
+        <th> <mark>Ejemplo:</mark></th>
+      
+        <tr>
+          <td><img src="img/Captura7.JPG" style="height:165px; width:316px" /></td>
+        
+        </tr>
+      </table>
+
+      
+      <h3> Los valores de atributo siempre deben estar entre comillas </h3>
+      <p> No está permitido omitir las comillas alrededor de los valores de atributos. <br> Los elementos XML pueden tener atributos en pares nombre/valor, <br>sin embargo, el valor de atributo siempre debe estar entre comillas. </p>
+      <table>
+        <th> <mark>Forma incorrecta:</mark></th>
+        
+        <tr>
+          <td><img src="img/Captura8.JPG" style="height:136px; width:306px" /></td>
+          
+        </tr>
+        <th> <mark>Forma correcta:</mark></th> 
+        <tr>
+          <td><img src="img/Captura9.JPG" style="height:136px; width:306px" /></td>
+        </tr>
+      </table><br>
+     
+      <h1> Aplicaciones del XML en el ámbito empresarial. </h1>
+      <p>XML es ampliamente utilizado en el ámbito empresarial para intercambiar información entre diferentes sistemas y plataformas de manera estructurada y organizada. Algunas de las aplicaciones más comunes de XML en el ámbito empresarial incluyen:
+      </p>
+      <!--Utilizo esta vez una lista ordenada para que enumere de forma automática los elementos de la lista, los alineo de forma justificada
+      que significa que dejan el mismo espacio en la parte izquierda y derecha-->
+      <ol>
+        <li style="text-align:justify"><strong>Integración de sistemas:</strong> XML permite integrar diferentes sistemas y aplicaciones de manera eficiente, al proporcionar un formato estandarizado para la transferencia de datos.
+        </li>
+        <li style="text-align:justify"><strong> Documentación de procesos de negocio:</strong> XML se utiliza para documentar los procesos de negocio de una empresa y para modelar y representar los flujos de trabajo de una forma clara y fácil de entender.
+        </li>
+        <li style="text-align:justify"><strong> Comercio electrónico:</strong> XML se utiliza en la transmisión de información relacionada con el comercio electrónico, como facturas, órdenes de compra y cualquier otra información relevante para los negocios.
+        </li>
+        <li style="text-align:justify"><strong> Intercambio de información en tiempo real:</strong> XML permite a las empresas intercambiar información en tiempo real, lo que aumenta la eficiencia de la comunicación y la toma de decisiones.
+        </li>
+        <li style="text-align:justify"><strong>  Desarrollo de aplicaciones:</strong> XML es una tecnología clave en el desarrollo de aplicaciones empresariales, ya que permite la representación y almacenamiento de información de una forma estructurada y accesible.  </li>
+      </ol>
+      
+      <p>
+        También se ha utilizado tanto para la definición de archivos de configuración, numerosos protocolos de comunicación y hasta como base para la especificación de otros sublenguajes, por ejemplo en <strong>XHTML, RSS, RDF o Atom</strong>.
+      </p>
+    </div> 
+  </body>
+</html>

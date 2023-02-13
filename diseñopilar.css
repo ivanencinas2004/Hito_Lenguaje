@@ -1,0 +1,142 @@
+body {
+    background-color: plum;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(204, 88, 181);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav :hover {
+    color: rgb(97, 67, 133);
+}
+
+.container_titulo {
+    background: linear-gradient(to right, rgb(97, 67, 133), rgb(81, 99, 149));
+    height: 3px;
+    padding-top: 100px;
+}
+
+.titulo {
+    text-align: center;
+    color: transparent;
+    -moz-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-color: #000000;
+    -webkit-text-stroke-color: #ffffff;
+    margin-top: -75px;
+}
+
+.titulo {
+    text-shadow: 7px 7px black;
+}
+
+.h1pilar {
+    background: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    width: 400px;
+    background-color: blue;
+    flex-wrap: wrap;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+title {
+    background: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p2 {
+    font-family: cursive;
+}
+
+p3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 25px;
+}
+
+h2 {
+    background: green;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    width: 400px;
+    background-color: green;
+    margin: 25px;
+}
+
+h3 {
+    background: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    width: 400px;
+    background-color: aqua;
+    margin: 25px;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    nav {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    nav a {
+      padding: 10px 0;
+      text-align: center;
+    }
+    .titulo{
+        font-size: 20px;
+        margin-top: -25px;
+    }
+    .container_titulo {
+      padding-top: 50px;
+    }
+    .h1pilar{
+        width: 230px;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+  @media (max-width: 437px) {
+    nav {
+      flex-direction:column;
+      height: auto;
+      width: 417px;
+    }
+    div{
+        width: 417px;
+    }
+    nav a {
+      padding: 10px 0;
+      text-align: center;
+    }
+    .titulo{
+        font-size: 20px;
+        margin-top: -25px;
+    }
+    .container_titulo {
+      padding-top: 50px;
+    }
+  }
